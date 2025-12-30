@@ -109,8 +109,8 @@ where customer_status = 'Joined';
 
 
 ## Dashboard & Model Highlights
-![Summary Page](https://github.com/UpadhyayPiyush/Customer-Churn-Predictor-/blob/main/Summary.pdf)
-![Prediction Page](https://github.com/UpadhyayPiyush/Customer-Churn-Predictor-/blob/main/Prediction.pdf)
+![Summary Page](https://github.com/UpadhyayPiyush/Customer-Churn-Predictor-/blob/main/Summary.png)
+![Prediction Page](https://github.com/UpadhyayPiyush/Customer-Churn-Predictor-/blob/main/Prediction.png)
 
 - Designed a two-page Power BI dashboard featuring an Overview page for overall churn metrics and a Predicted Churners page focused on high-risk customers identified by the ML model.
 - Implemented 10+ DAX KPIs including total customers (6,418), churned customers (1,732), and overall churn rate (27.4%).
