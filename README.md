@@ -8,9 +8,11 @@ An interactive Power BI dashboard was developed to visualize churn trends, custo
 Additionally, a Random Forest machine learning model was built to predict high-risk churn customers with 84% accuracy. 
 The project helps businesses proactively identify churn risk and improve customer retention strategies.
 
+
 ## Business Problem & Objective 
 Customer churn is a major challenge for telecom companies, leading to significant revenue loss and reduced customer lifetime value. With increasing competition, retaining existing customers is more cost-effective than acquiring new ones. However, identifying why customers churn and which customers are at risk is not always straightforward.
 The objective of this project is to analyze customer behavior, identify key churn drivers, calculate churn metrics (27.4% churn rate), and build a predictive model to proactively detect high-risk churn customers, enabling data-driven retention strategies.
+
 
 ## Schema Structure 
 ``` sql
@@ -60,12 +62,14 @@ select * from customer_data
 where customer_status = 'Joined';  
 ```
 
+
 ## Tools & Technologies 
 - **MySQL** – Data storage, ETL pipeline, data cleaning, and SQL-based churn analysis  
 - **Power BI** – Interactive dashboards, DAX KPIs, slicers, bookmarks, and tooltips  
 - **Python** – Data preprocessing, machine learning, and churn prediction  
 - **Libraries** – Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Joblib  
 - **Machine Learning** – Random Forest Classifier for churn prediction
+
 
 ## Project Workflow 
 **ETL (Extract, Transform, Load)**
@@ -88,3 +92,28 @@ where customer_status = 'Joined';
 - Developed a two-page Power BI report with interactive KPIs, slicers, bookmarks, and tooltips.
 - The first page presents an overall churn and customer overview, while the second page focuses on predicted churners and revenue at risk.
 - Designed visuals to support business decision-making by clearly highlighting churn trends, risk segments, and actionable insights.
+
+
+## Key Insights 
+- The dataset contains 6,418 total customers, out of which 1,732 customers have churned, resulting in an overall churn rate of ~27%. 
+- Month-to-month contracts show the highest churn rate (~46.5%), compared to One-Year (11%) and Two-Year (2.7%) contracts, making contract type a major churn driver. 
+- Customers with Fiber Optic internet experience the highest churn (~41.1%), significantly higher than DSL (~19.4%) and Cable (~25.7%) users. 
+- The machine learning model identified 378 customers as high-risk churners and achieved an overall prediction accuracy of 84%, enabling proactive churn identification.
+
+
+## Recommendations
+- Prioritize retention efforts for customers on month-to-month contracts, especially those with short tenure (<12 months), as they contribute the highest share of churn.
+- Introduce targeted offers or service improvements for Fiber Optic customers, where churn exceeds 40%, to reduce dissatisfaction and switching behavior.
+- Use the 378 predicted high-risk churners from the ML model to run focused retention campaigns, such as plan upgrades or loyalty incentives.
+- Leverage the Power BI dashboard to continuously monitor churn KPIs (27% churn rate, 1,732 churned customers) and track improvements over time.
+
+
+## Dashboard & Model Highlights
+![Summary Page](https://github.com/UpadhyayPiyush/Customer-Churn-Predictor-/blob/main/Summary.pdf)
+![Prediction Page](https://github.com/UpadhyayPiyush/Customer-Churn-Predictor-/blob/main/Prediction.pdf)
+
+- Designed a two-page Power BI dashboard featuring an Overview page for overall churn metrics and a Predicted Churners page focused on high-risk customers identified by the ML model.
+- Implemented 10+ DAX KPIs including total customers (6,418), churned customers (1,732), and overall churn rate (27.4%).
+- Added advanced Power BI features such as slicers, bookmarks, navigation buttons, and custom tooltips to enable interactive exploration.
+- Integrated machine learning predictions into Power BI to highlight 378 high-risk churn customers and visualize revenue at risk.
+- Visualized key churn drivers such as contract type, tenure, and internet service, enabling stakeholders to identify and prioritize retention actions.
