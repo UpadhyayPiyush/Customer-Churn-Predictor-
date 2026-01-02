@@ -108,12 +108,9 @@ where customer_status = 'Joined';
 - Leverage the Power BI dashboard to continuously monitor churn KPIs (27% churn rate, 1,732 churned customers) and track improvements over time.
 
 
-## Dashboard & Model Highlights
+## Report View 
 ![Summary Page](https://github.com/UpadhyayPiyush/Customer-Churn-Predictor-/blob/main/Summary.png)
 ![Prediction Page](https://github.com/UpadhyayPiyush/Customer-Churn-Predictor-/blob/main/Prediction.png)
 
-- Designed a two-page Power BI dashboard featuring an Overview page for overall churn metrics and a Predicted Churners page focused on high-risk customers identified by the ML model.
-- Implemented 10+ DAX KPIs including total customers (6,418), churned customers (1,732), and overall churn rate (27.4%).
-- Added advanced Power BI features such as slicers, bookmarks, navigation buttons, and custom tooltips to enable interactive exploration.
-- Integrated machine learning predictions into Power BI to highlight 378 high-risk churn customers and visualize revenue at risk.
-- Visualized key churn drivers such as contract type, tenure, and internet service, enabling stakeholders to identify and prioritize retention actions.
+## Conclusion 
+This project demonstrates a complete end-to-end churn analysis workflow by combining SQL-based data processing, interactive Power BI dashboards, and machine learning prediction. By analyzing 6,418 customers, identifying an overall 27.4% churn rate, and predicting high-risk churners with 84% model accuracy, the solution provides clear visibility into customer behavior and churn drivers. The integrated analytical and predictive approach enables businesses to proactively target at-risk customers, reduce revenue loss, and make informed retention decisions, showcasing strong practical application of data analytics and machine learning in a real-world telecom use case.
